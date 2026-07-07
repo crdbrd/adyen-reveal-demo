@@ -1,0 +1,24 @@
+{
+  "name": "adyen-reveal-demo",
+  "private": true,
+  "type": "module",
+  "description": "Demo: Adyen PAN reveal flow with userland RSA vs. standard WebCrypto",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "reveal:diy": "node reveal-diy.js",
+    "reveal:forge": "node reveal-forge.js",
+    "reveal:micro": "node reveal-micro.js",
+    "reveal:webcrypto": "node reveal-webcrypto.js",
+    "sizes": "node sizes.js"
+  },
+  "dependencies": {
+    "micro-rsa-dsa-dh": "^0.3.0",
+    "node-forge": "^1.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1"
+  }
+}
